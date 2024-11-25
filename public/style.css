@@ -1,0 +1,64 @@
+/* public/style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  #puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* Griglia di 4 colonne */
+    grid-gap: 5px; /* Spaziatura tra i pezzi */
+    justify-content: center;
+    margin: 20px auto;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 420px; /* 400px + gap */
+    height: 420px; /* 400px + gap */
+  }
+  
+  .puzzle-piece {
+    width: 100px;
+    height: 100px;
+    background-size: 400px 400px; /* Dimensione totale dell'immagine */
+    border: 1px solid #bbb; /* Bordo sottile */
+    border-radius: 4px; /* Angoli arrotondati */
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Effetto al passaggio del mouse */
+  }
+  
+  .puzzle-piece:hover {
+    transform: scale(1.1); /* Zoom leggero */
+  }
+  
+  .puzzle-piece.empty {
+    background: transparent; /* Nessuna immagine */
+    border: none; /* Nessun bordo */
+    cursor: default;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
