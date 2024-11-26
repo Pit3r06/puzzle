@@ -1,7 +1,7 @@
 var http = require("http"); 
-var dispatcher = require("./dispatcher");
+var dispatcher = require("./node_modules/dispatcher");
 
-var server = http.createServer(gestisciRichieste);
+var server = http.createServer(gestisciRichieste);  
 
 var disp = new dispatcher();
 disp.aggiungiServizio("/image",image);
