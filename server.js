@@ -7,7 +7,7 @@ var disp = new dispatcher();
 disp.aggiungiServizio("/image",image);
 
 function image(richiesta, risposta){
-    risposta.url = "/images/puzzle.jpg";
+    risposta.url = "puzzle.jpg";
     disp.smista(richiesta, risposta);};
 
 function gestisciRichieste(richiesta, risposta){
@@ -18,7 +18,7 @@ function gestisciRichieste(richiesta, risposta){
     console.log(richiesta.headers.host);
 
     disp.smista(richiesta, risposta);
-}
+}   
 
 server.listen(1337);
 console.log("Il server è stato avviato sulla porta 1337");
